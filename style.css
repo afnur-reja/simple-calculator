@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #1E1E2E;
+    padding: 5px;
+}
+
+.container {
+    background-color: #2A2A3C;
+    border-radius: 10px;
+    max-width: 460px;
+    margin-inline: auto;
+    padding: 2rem ;
+    margin-top: 30px;
+    box-shadow: 3px 5px 11px 3px #030315a8;
+
+}
+
+
+.output {
+    min-height: 101.6px;
+    padding: 2rem;
+    text-align: end;
+    font-size: 2rem;
+    font-weight: bold;
+    background: rgba(59, 59, 79, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #ffffffde;
+}
+
+#delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #EF4444;
+    cursor: pointer;
+}
+
+
+#delete img {
+    width: 30px;
+    filter: invert(1);
+}
+
+#delete:hover {
+    background-color: #DC2626;
+    box-shadow: 0 0 10px rgba(235, 37, 83, 0.4);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem 1rem;
+}
+
+.buttons button {
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn {
+    background-color: #4B5563;
+}
+
+.btn:hover {
+    background-color: #5B6475;
+    box-shadow: 0px 3px 2px 2px #3b3b4f69;
+}
+
+
+.opr {
+    background-color: #2563EB;
+}
+
+.opr:hover {
+    background-color: #1D4ED8;
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+@media (max-width: 450px) {
+
+
+  .container {
+    max-width: 400px;
+    padding: 1.5rem ;
+    margin-inline: 1rem;
+    margin-top: 8rem;
+  }
+  
+  .buttons {
+    grid-gap: 8px 8px;
+  }
+
+  .buttons button {
+    padding: 1.4rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.output {
+    min-height: 77px;
+    padding: 1.5rem;
+    text-align: end;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#delete {
+    border-radius: 20px;
+}
+
+#delete img {
+    width: 20px;
+}
+  }
