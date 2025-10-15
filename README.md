@@ -1,2 +1,2 @@
 ## 📷 Preview
-[Weather App](https://claculator-arej.netlify.app/)
+[Calculator](https://calculator-arej.netlify.app/)
