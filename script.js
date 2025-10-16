@@ -30,7 +30,7 @@ buttons.forEach((button) => {
 });
 
 calc.addEventListener("click", () => {
-  if (!"+-*/".includes(str.at(-1))) {
+  if (!"+-*/".includes(str.at(-1)) && !(str.length === 0)) {
     try {
       str = `${eval(str)}`;
       result.innerHTML = str;
